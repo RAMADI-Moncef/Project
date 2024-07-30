@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Basics - DevOps Hub</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0B1A46;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #0B1A46;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .main-content {
+            max-width: 800px;
+            text-align: left;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+        .code-snippet {
+            background-color: #1e293b;
+            color: #dcdcdc;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .video {
+            margin: 30px 0;
+        }
+        .illustration img {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #00C2FF;
+            color: #0B1A46;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #009bd1;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00C2FF;
+            color: #0B1A46;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: none;
+        }
+        .back-to-top:hover {
+            background-color: #009bd1;
+        }
+        footer {
+            background-color: #0B1A46;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">DevOps Hub</div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="python.html">PYTHON</a>
+                <a href="docker.html">DOCKER</a>
+                <a href="github.html">GITHUB</a>
+                <a href="about.html">ABOUT</a>
+            </nav>
+        </div>
+        <div class="main-content">
+            <h1>Git et GitHub - Notions Fondamentales</h1>
+            <p>Git est un système de contrôle de version distribué utilisé pour suivre les modifications apportées au code source au cours du développement logiciel. GitHub est une plateforme de collaboration qui permet aux développeurs d'héberger et de gérer leurs projets Git.</p>
+            
+            <h2>Commandes de Base Git</h2>
+            <div class="code-snippet">
+                <p><strong>Initialiser un dépôt Git</strong></p>
+                <code>git init</code>
+            </div>
+            <div class="code-snippet">
+                <p><strong>Cloner un dépôt</strong></p>
+                <code>git clone https://github.com/nom-utilisateur/nom-depot.git</code>
+            </div>
+            <div class="code-snippet">
+                <p><strong>Ajouter des fichiers au suivi</strong></p>
+                <code>git add nom-fichier</code>
+            </div>
+            <div class="code-snippet">
+                <p><strong>Committer des modifications</strong></p>
+                <code>git commit -m "Message de commit"</code>
+            </div>
+            <div class="code-snippet">
+                <p><strong>Pousser les modifications vers un dépôt distant</strong></p>
+                <code>git push origin main</code>
+            </div>
+
+            <h2>Utilisation de GitHub</h2>
+            <p>GitHub permet de collaborer facilement avec d'autres développeurs, de gérer des pull requests et de suivre les problèmes. Voici comment créer une nouvelle branche et faire une pull request :</p>
+            
+            <div class="code-snippet">
+                <p><strong>Créer une nouvelle branche</strong></p>
+                <code>git checkout -b nom-branche</code>
+            </div>
+            <div class="code-snippet">
+                <p><strong>Faire une pull request</strong></p>
+                <p>Après avoir poussé votre branche sur GitHub, allez sur la page du dépôt et cliquez sur "New pull request".</p>
+            </div>
+
+            <div class="illustration">
+                <img src="https://iot.samteck.net/wp-content/uploads/2019/05/Git-work-flow.png" alt="GitHub Illustration">
+            </div>
+
+            <div class="video">
+                <h2>Vidéo Tutoriel Git & GitHub</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RGOj5yH7evk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#top" class="back-to-top">Back to Top</a>
+<footer>
+    &copy; 2024 DevOps Hub. Tous droits réservés.
+</footer>
+
+<script>
+    // Show/hide back-to-top button
+    const backToTopButton = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
