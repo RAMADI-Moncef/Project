@@ -25,5 +25,7 @@ Ouvrez un terminal et accédez au répertoire contenant votre fichier docker-com
 Exécutez la commande suivante pour démarrer les services :
 docker-compose up -d
 Ouvrez votre navigateur et accédez à http://localhost:8084 pour voir votre application en cours d'exécution.
+
+
 Licence
 Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
