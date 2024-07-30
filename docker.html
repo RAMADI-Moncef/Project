@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0B1A46;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .navbar {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensure navbar is above other content */
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #00C2FF;
+            color: #0B1A46;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #009bd1;
+        }
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #00C2FF 0%, #0B1A46 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            color: #fff;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+        .hero-content h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero-content p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .content-section {
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .content-section p, .content-section ul {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 800px;
+            text-align: center;
+        }
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-section li {
+            margin: 10px 0;
+        }
+        .content-section img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .video-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .video-section iframe {
+            width: 90%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .cta-section {
+            padding: 60px 20px;
+            background-color: #0B1A46;
+            color: #fff;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .cta-section .button {
+            background-color: #00C2FF;
+            color: #0B1A46;
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+        footer {
+            background-color: #0B1A46;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        function scrollToContent() {
+            document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="button">Back to Home</a>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="python.html">PYTHON</a>
+            <a href="docker.html">DOCKER</a>
+            <a href="github.html">GITHUB</a>
+            <a href="#">ABOUT</a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Docker</h1>
+            <p>Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker's methodologies for shipping, testing, and deploying code, you can significantly reduce the delay between writing code and running it in production.</p>
+            <a href="javascript:void(0);" class="button" onclick="scrollToContent()">Explore</a>
+        </div>
+    </div>
+    <div class="content-section" id="info">
+        <h2>How Docker Works</h2>
+        <p>Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, runtime, system tools, and system libraries. This ensures consistency across multiple environments.</p>
+        <img src="https://docs.docker.com/guides/images/docker-architecture.webp" alt="Docker Architecture">
+    </div>
+    <div class="content-section">
+        <h2>Benefits of Using Docker</h2>
+        <p></p>
+        <img src="https://assets-global.website-files.com/60f8ffe4d3ddfa64654d6667/6565799a5b55bff7eb044b4b_docker%20vs%20kubernets.webp" alt="Docker Benefits">
+    </div>
+    <div class="video-section">
+        <h2>Docker Overview Video</h2>
+        <iframe src="https://www.youtube.com/embed/_dfLOzuIg2o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="cta-section">
+        <h2>Start Your Docker Journey Today</h2>
+        <p>Explore the power of Docker to streamline your development and deployment processes. Get started with our comprehensive guides and resources.</p>
+        <a href="subscription.html" class="button">Get Started</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 DevOps Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
