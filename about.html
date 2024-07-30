@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DevOps Hub</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0B1A46;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #0B1A46;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .main-content {
+            max-width: 800px;
+            text-align: left;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .collaborators {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .collaborator {
+            background-color: #1e293b;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 80%;
+        }
+        .button {
+            background-color: #00C2FF;
+            color: #0B1A46;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #009bd1;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00C2FF;
+            color: #0B1A46;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: none;
+        }
+        .back-to-top:hover {
+            background-color: #009bd1;
+        }
+        footer {
+            background-color: #0B1A46;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">DevOps Hub</div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="python.html">PYTHON</a>
+                <a href="docker.html">DOCKER</a>
+                <a href="github.html">GITHUB</a>
+                <a href="about.html">ABOUT</a>
+            </nav>
+        </div>
+        <div class="main-content">
+            <h1>About Our Project</h1>
+            <p>Ce projet a été réalisé dans le cadre du module DevOps sous la supervision de Monsieur Fouad Moufarreh. Notre objectif est de fournir des ressources essentielles et des conseils pratiques sur Python, Docker, et GitHub, afin d'aider les développeurs à maîtriser ces outils indispensables.</p>
+
+            <h2>Collaborators</h2>
+            <div class="collaborators">
+                <div class="collaborator">
+                    <h3>ECH-CHARFY EL MAHDI </h3>
+                    <p>création de la page d'accueil et la page about GitHub ainsi la page en cours</p>
+                </div>
+                <div class="collaborator">
+                    <h3>BIZZOU MOHAMMED</h3>
+                    <p>création de la page about Docker et le canvas de toutes les pages</p>
+                </div>
+                <div class="collaborator">
+                    <h3>RAMADI MONCEF</h3>
+                    <p>Création de la page about Python et la mise en place conteneur docker pour lancer l'application dans un serveur Nginx locale</p>
+                </div>
+            </div>
+
+            <h2>Our Aspirations</h2>
+            <p>Nous aspirons à devenir une référence en matière de ressources DevOps, en fournissant des contenus pédagogiques de haute qualité, en encourageant la collaboration, et en aidant les développeurs à progresser dans leur carrière.</p>
+
+            <h2>How to Become a DevOps Expert</h2>
+            <p>Pour devenir un expert DevOps, il est important de :</p>
+            <ul>
+                <li>Maîtriser les bases de la programmation et de la gestion des systèmes.</li>
+                <li>Apprendre les outils DevOps tels que Git, Docker, Kubernetes, et Jenkins.</li>
+                <li>Participer à des projets open source pour acquérir de l'expérience pratique.</li>
+                <li>Suivre des formations et obtenir des certifications reconnues.</li>
+                <li>Collaborer avec d'autres professionnels et partager ses connaissances.</li>
+            </ul>
+
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 DevOps Hub. Tous droits réservés.
+    </footer>
+
+    <script>
+        // Show/hide back-to-top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
